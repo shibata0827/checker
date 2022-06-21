@@ -56,7 +56,7 @@ python checker.py
 ```
 
 UI表示ファイル  
-待機画面&nbsp→&nbsp「セッティング画面&nbsp↔︎&nbsp推論画面」ループ&nbsp→&nbsp終了画面  
+待機画面&nbsp;→&nbsp;「セッティング画面&nbsp;↔︎&nbsp;推論画面」ループ&nbsp;→&nbsp;終了画面  
 ```
 ./main/show_app.py
 ```
