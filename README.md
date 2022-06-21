@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 
 ## Setting
-閾値などyolov5の設定　動画・推論・CPUのみのため最小限
+閾値などyolov5の設定、動画・推論・CPUのみのため最小限
 ```
 ./main/config.yaml
 ```
@@ -24,20 +24,54 @@ UI、検出対象の設定
 ./main/set_config.yaml
 ```
 
+## Run
+```
+python checker.py
+```
+
+
+## dir and file
+推論実行ファイル
+```
+./main/run_inference.py
+```
+
+UI表示ファイル
+```
+./main/show_app.py
+```
+
+yolov5ファイル、動画・推論・CPU処理に必要なコードのみ
+```
+./main/models
+./main/utils
+```
+
+yolov5学習済み重み、対応形式onnx・pt
+```
+./main/utils/weight
+```
+
+OK、NG判定時のブザー音
+```
+./main/utils/Buzzer
+```
+
+起動時のロード画像
+```
+./main/utils/img
+```
+
 チェックボックスで指定したクラス
 ```
 ./main/set_class.yaml
 ```
 
-モデル検出可能なクラス
+モデル検出クラス
 ```
 ./main/class.yaml
 ```
 
-## Run
-```
-python checker.py
-```
 
 ## 参照
 [yolov5](https://github.com/ultralytics/yolov5)
