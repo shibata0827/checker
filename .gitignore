@@ -1,0 +1,7 @@
+*.o
+*.hi
+*.chi
+*.chs.h
+/***/.DS_Store
+/***/.gitkeep
+/***/.gitignore

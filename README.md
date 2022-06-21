@@ -73,11 +73,6 @@ OK、NG判定時のブザー音
 ./main/utils/Buzzer
 ```
 
-起動時のロード画像
-```
-./main/utils/img
-```
-
 チェックボックスで指定したクラス
 ```
 ./main/set_class.yaml
