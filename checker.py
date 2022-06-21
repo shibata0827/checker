@@ -67,7 +67,7 @@ def tkapp_thread(q, set_config_path, class_path, set_class_path, sound_path, tmp
         sys.exit()
 
 
-class GenbaCheckerMain():
+class CheckerMain():
     def __init__(self,
                  config_path=ROOT / "main" / "config.yaml",
                  set_config_path=ROOT / "main" / "set_config.yaml",
@@ -111,7 +111,7 @@ class GenbaCheckerMain():
         p_inference.join()
 
 def main():
-    process = GenbaCheckerMain()
+    process = CheckerMain()
     process.main()
 
 if __name__ == "__main__":

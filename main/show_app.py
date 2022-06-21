@@ -50,7 +50,7 @@ class Tk_app(tk.Frame):
         # 親win
         # パラメータ
         self.app_bg='#003366'
-        self.app_title="GenbaChecker"
+        self.app_title="Checker"
         self.master.update_idletasks()
         self.app_w = self.master.winfo_screenwidth() # パソコン画面の幅を取得する関数
         self.app_h = self.master.winfo_screenheight() # パソコン画面の高さを取得する関数
@@ -89,12 +89,11 @@ class Tk_app(tk.Frame):
         """
         self.wait_frame = tk.Frame(self.master, name="init")
         self.wait_frame.grid(row=0, column=0, sticky="nsew")
-        # self.title("GENBA-Checker -起動画面-")
         # self.geometry("1000x1500")
         self.wait_frame.configure(bg='#003366')
 
         #text
-        txt_title = tk.Label(self.wait_frame, text='GENBA-Checker', foreground='#ffffff', background='#003366', font=("Arial Black", 60))
+        txt_title = tk.Label(self.wait_frame, text='Checker', foreground='#ffffff', background='#003366', font=("Arial Black", 60))
         txt_progress = tk.Label(self.wait_frame, text='起動中', foreground='#ffffff', background='#003366', font=("Helvetica", 30))
 
         #progress
@@ -119,12 +118,11 @@ class Tk_app(tk.Frame):
 
         self.set_frame = tk.Frame(self.master, name="set")
         self.set_frame.grid(row=0, column=0, sticky="nsew")
-        # setting.title("GENBA-Checker -システム設定-")
         # setting.geometry("1000x1500")
         self.set_frame.configure(bg='#003366')
 
         #text
-        txt_title = tk.Label(self.set_frame, text='GENBA-Checker', foreground='#ffffff', background='#003366', font=("Arial Black", 60))
+        txt_title = tk.Label(self.set_frame, text='Checker', foreground='#ffffff', background='#003366', font=("Arial Black", 60))
         txt_1 = tk.Label(self.set_frame, text='アプリ設定', foreground='#ffffff', background='#003366', font=("Helvetica", 30))
         txt_2 = tk.Label(self.set_frame, text='検知項目を以下より選択してください', foreground='#ffffff', background='#003366', font=("Helvetica", 20))
 
@@ -245,12 +243,11 @@ class Tk_app(tk.Frame):
         """
         self.close_frame = tk.Frame(self.master, name="close")
         self.close_frame.grid(row=0, column=0, sticky="nsew")
-        # setting.title("GENBA-Checker -システム設定-")
         # setting.geometry("1000x1500")
         self.close_frame.configure(bg='#333333')
 
         #text
-        txt_title = tk.Label(self.close_frame, text='GENBA-Checker', fg='#ffffff', bg='#333333', font=("Arial Black", 60))
+        txt_title = tk.Label(self.close_frame, text='Checker', fg='#ffffff', bg='#333333', font=("Arial Black", 60))
         txt_1 = tk.Label(self.close_frame, text='終了しますか？', fg='#ffffff', bg='#333333', font=("Helvetica", 60))
 
         #button
