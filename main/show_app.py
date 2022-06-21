@@ -97,11 +97,6 @@ class Tk_app(tk.Frame):
         txt_title = tk.Label(self.wait_frame, text='GENBA-Checker', foreground='#ffffff', background='#003366', font=("Arial Black", 60))
         txt_progress = tk.Label(self.wait_frame, text='起動中', foreground='#ffffff', background='#003366', font=("Helvetica", 30))
 
-        #image
-        img_ixslogo = ImageTk.PhotoImage(file='./utils/img/ixslogo.png')
-        #img_ixslogo = tk.PhotoImage(file='./utils/img/ixslogo.gif')
-        ixslogo = ttk.Label(self.wait_frame, image=img_ixslogo)
-
         #progress
         style=ttk.Style()
         style.theme_use("clam")
@@ -110,7 +105,6 @@ class Tk_app(tk.Frame):
         progress.start()
 
         #place
-        ixslogo.pack(pady=30)
         txt_title.pack(pady=30)
         txt_progress.pack(pady=30)
         progress.pack(pady=10)
