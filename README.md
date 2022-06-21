@@ -8,7 +8,7 @@ WEBCAMを使用しCPUで物体検知をリアルタイム検知、UI表示する
 
 ## Install
 ```
-git clone https://github.com/shibat](https://github.com/shibata0827/checker.git
+git clone https://github.com/shibata0827/checker.git
 cd checker
 pip install -r requirements.txt
 ```

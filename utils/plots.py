@@ -9,7 +9,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-import pandas as pd
+# import pandas as pd
 import torch
 from PIL import Image, ImageDraw, ImageFont
 
