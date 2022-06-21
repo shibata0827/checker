@@ -31,11 +31,7 @@ pip install -r requirements.txt
 ```
 
 UI、検出対象の設定  
-・name_convert: class nameとUI表示名の対応、class nameに存在する場合のみUI表示、表示名nullは常に検出対象  
-  tie: null  
-  clock: 持ち物  
-  cell phone: 持ち物  
-  cup: カップ  
+・name_convert: class nameとUI表示名の対応、class nameに存在する場合のみUI表示、表示名nullは常に検出対象   
 ・trigger_name: 検出開始のトリガー、常に検出対象  
 ・ok_sound: OK音の有無  
 ・ng_sound: NG音の有無  
