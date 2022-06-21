@@ -1,0 +1,19 @@
+# default parameters
+weights: './utils/weight/yolov5s.onnx'  # model.pt path(s),
+source: 0  # file/dir/URL/glob, 0 for webcam,
+imgsz: (640, 640)  # inference size (height, width),
+conf_thres: 0.4  # confidence threshold,
+iou_thres: 0.45  # NMS IOU threshold,
+save_txt: False  # save results to *.txt（評価時間内での検出結果）,
+save_conf: False  # save confidences in --save-txt labels（評価時間内での検出結果）,
+save_crop: False  # save cropped prediction boxes（評価時間内での検出結果）,
+save_img: False  # save images（評価時間内での検出結果）,
+project: './sys'  # save results to project/name,
+line_thickness: 3  # bounding box thickness (pixels),
+hide_labels: False  # hide labels,
+hide_conf: False  # hide confidences,
+
+# add parameters
+save_evidence: True  # save evidence imgage（時間内での評価結果の根拠となる画像保存）,
+camera_rot: 0  # camera rot: [-90, 0, 90, 180],
+evidence_project: './evidence'  # save results to project/name,

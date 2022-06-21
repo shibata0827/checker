@@ -1,0 +1,9 @@
+name_convert:  # class nameとUI表示名の対応、class nameに存在する場合のみUI表示、表示名nullは常に検出対象,
+  tie: null
+  clock: 持ち物
+  cell phone: 持ち物
+  cup: カップ
+trigger_name: person  # 検出開始のトリガー、常に検出対象,
+ok_sound: true  # OK音の有無,
+ng_sound: false  # NG音の有無,
+judgment_period: 1.0  # trigger_name検出から評価時間（秒）,
