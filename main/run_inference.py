@@ -32,7 +32,7 @@ class Inference_app():
         self.q = q
 
         self.config_path = config_path
-        with open(self.config_path, 'r') as yml:
+        with open(self.config_path, 'r', encoding='utf-8') as yml:
             self.config_data = yaml.load(yml, Loader=yaml.SafeLoader)
         self.weights=self.config_data["weights"]
         self.source=self.config_data["source"]
