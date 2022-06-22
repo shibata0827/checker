@@ -143,14 +143,13 @@ class Inference_app():
                 raw_txt_data += (('%g ' * len(line)).rstrip() % line + '\n')
 
             # アノテーション
-            if self.save_img or self.save_crop or self.save_evidence or self.save_mov:  # Add bbox to image
-                c = int(cls)  # integer class
-                label = None if self.hide_labels else (self.names[c] if self.hide_conf else f'{self.names[c]} {conf:.2f}')
-                annotator.box_label(xyxy, label, color=colors(c, True),
-                                    class_flg=self.names[int(cls)] in self.set_class_data["target_names"])
-                if self.save_crop:
-                    # save_one_box(xyxy, imc, file=self.save_crop_dir / f'{self.date_name}_{str(c)}.jpg', BGR=True)
-                    raw_crops.append([xyxy, imc, self.save_crop_dir / f'{self.date_name}_{str(c)}.jpg'])
+            c = int(cls)  # integer class
+            label = None if self.hide_labels else (self.names[c] if self.hide_conf else f'{self.names[c]} {conf:.2f}')
+            annotator.box_label(xyxy, label, color=colors(c, True),
+                                class_flg=self.names[int(cls)] in self.set_class_data["target_names"])
+            if self.save_crop:
+                # save_one_box(xyxy, imc, file=self.save_crop_dir / f'{self.date_name}_{str(c)}.jpg', BGR=True)
+                raw_crops.append([xyxy, imc, self.save_crop_dir / f'{self.date_name}_{str(c)}.jpg'])
 
             # 検知した対象
             if self.names[int(cls)] in self.set_class_data["target_names"]:
